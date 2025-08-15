@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revive & Wellness LLC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f4; }
+        a { text-decoration: none; color: inherit; }
+        header { background-color: #2AB0A6; color: #fff; padding: 20px 0; }
+        header nav { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+        header nav a { font-weight: bold; }
+        .hero { background: url('https://via.placeholder.com/1200x500') center/cover no-repeat; height: 500px; display: flex; align-items: center; justify-content: center; color: #fff; text-align: center; }
+        .hero h1 { font-size: 2.5rem; background-color: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px; }
+        section { padding: 60px 20px; max-width: 1100px; margin: 0 auto; }
+        h2 { color: #2AB0A6; margin-bottom: 20px; }
+        .cards { display: flex; flex-wrap: wrap; gap: 20px; }
+        .card { background-color: #fff; flex: 1; min-width: 250px; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+        .card img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+        form { display: flex; flex-direction: column; gap: 15px; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+        form input, form textarea, form select, form button { padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
+        form button { background-color: #2AB0A6; color: #fff; border: none; cursor: pointer; font-weight: bold; }
+        footer { background-color: #333; color: #fff; text-align: center; padding: 20px 0; }
+        @media(max-width: 768px){ .cards { flex-direction: column; } header nav { gap: 15px; } iframe { width: 100%; border: none; } }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#faq">FAQ</a>
+            <a href="#forms">Forms</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Revive & Wellness LLC – Mobile IV Therapy & Free HIV/STD Testing</h1>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Founded by healthcare professionals, Revive & Wellness LLC is committed to providing accessible, confidential, and professional mobile healthcare services. Our goal is to support your health and wellness wherever you are.</p>
+        <p><strong>Mission:</strong> To make healthcare accessible, safe, and convenient for our community.</p>
+        <div class="cards">
+            <div class="card">
+                <h3>Experienced Staff</h3>
+                <p>Our team is trained and licensed to provide safe IV therapy and confidential testing.</p>
+            </div>
+            <div class="card">
+                <h3>HIPAA-Compliant</h3>
+                <p>We ensure your privacy and maintain all necessary medical standards and confidentiality.</p>
+            </div>
+            <div class="card">
+                <h3>Mobile Convenience</h3>
+                <p>We bring our services directly to you for ultimate convenience and flexibility.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x200" alt="IV Therapy">
+                <h3>IV Therapy</h3>
+                <p>Customized IV therapy to support hydration, energy, immunity, and wellness. Administered safely by licensed professionals at your preferred location.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400x200" alt="Free HIV/STD Testing">
+                <h3>Free HIV/STD Testing</h3>
+                <p>Confidential, rapid HIV/STD testing at no cost. Your health, your privacy, your choice.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <select name="service">
+                <option value="">Service Interested In</option>
+                <option value="iv-therapy">IV Therapy</option>
+                <option value="hiv-std-testing">Free HIV/STD Testing</option>
+            </select>
+            <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Phone: (Placeholder)</p>
+        <p>Email: (Placeholder)</p>
+        <p>Mobile Unit – Services Come to You</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>FAQ</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Do I need an appointment?</h3>
+                <p>No, anyone can walk in.</p>
+            </div>
+            <div class="card">
+                <h3>Is HIV/STD testing really free?</h3>
+                <p>Yes! Our testing is completely confidential and free of charge.</p>
+            </div>
+            <div class="card">
+                <h3>Do I need parental consent for minors?</h3>
+                <p>Yes, we have HIPAA-compliant minor consent forms available.</p>
+            </div>
+            <div class="card">
+                <h3>How is IV therapy administered?</h3>
+                <p>Our licensed staff safely administer IV therapy using sterile, single-use equipment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forms Section -->
+    <section id="forms">
+        <h2>Forms & Signups</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Newsletter Signup</h3>
+                <iframe src="https://form.jotform.com/232345678901567" width="100%" height="600"></iframe>
+            </div>
+            <div class="card">
+                <h3>HIPAA Consent Form</h3>
+                <iframe src="https://form.jotform.com/232345678901568" width="100%" height="800"></iframe>
+            </div>
+            <div class="card">
+                <h3>Minor Consent Form</h3>
+                <iframe src="https://form.jotform.com/232345678901569" width="100%" height="800"></iframe>
+            </div>
+            <div class="card">
+                <h3>Know Your Status Form</h3>
+                <iframe src="https://form.jotform.com/232345678901570" width="100%" height="800"></iframe>
+            </div>
+        </div>
+        <p>All forms are HIPAA-compliant. Please fill out the forms as needed before visiting our mobile unit.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Revive & Wellness LLC | All rights reserved.</p>
+    </footer>
+</body>
+</html>
